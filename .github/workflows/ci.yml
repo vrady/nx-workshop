@@ -16,8 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: bahmutov/npm-install@v1
-      - uses: nrwl/nx-set-shas@v2
-      - run: nx affected --target=test --base=origin/master --parallel
+      - run: npm run nx affected --target=test --base=origin/master --parallel
 #  lint:
 #    runs-on: ubuntu-latest
 #    name: Linting affected apps
