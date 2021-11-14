@@ -4,6 +4,8 @@ import { RouterModule } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
 
 import { GameDetailComponent } from './game-detail/game-detail.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   imports: [
@@ -11,7 +13,9 @@ import { GameDetailComponent } from './game-detail/game-detail.component';
     RouterModule.forChild([
       { path: '', pathMatch: 'full', component: GameDetailComponent }
     ]),
-    MatCardModule
+    MatCardModule,
+    HttpClientModule,
+    MatButtonModule
   ],
   declarations: [
     GameDetailComponent
