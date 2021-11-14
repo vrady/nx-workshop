@@ -4,13 +4,15 @@ import { RouterModule } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
 
 import { AppComponent } from './app.component';
+import { StoreUiSharedModule } from '@bg-hoard/store/ui-shared';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     RouterModule.forRoot([], { initialNavigation: 'enabledBlocking' }),
-    MatCardModule
+    MatCardModule,
+    StoreUiSharedModule
   ],
   providers: [],
   bootstrap: [AppComponent],
